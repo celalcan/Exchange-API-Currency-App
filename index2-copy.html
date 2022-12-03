@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./select.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="ust">
+            <h1 class="baslik">Exchange API - Currency App</h1>
+        </div>
+        <div class="orta">
+            <div class="sol">
+                <div class="card-sol">
+                    <div class="bir">
+                        <input class="miktar" type="number" autocomplete="off" name = "amount" id = "amount" placeholder="Miktar Gir">
+                    </div>
+                    <div class="iki">
+
+                            <!--  -->
+
+
+                           
+                               
+                                
+                            
+                                    <div class="select-box">
+                                        <div class="selected">
+                                            <h1 class="h1"> Category </h1>
+                                           <div class="imgg">  <img id="myImg" src="./arrow-down.svg" alt=""></div>
+                                          
+                                        </div>
+                                        <div class="options-container">
+                                            
+                                
+                                            <div class="option">
+                                            <input type="radio" class="radio" id="film" name="category" />
+                                            <label for="film">EUR</label>
+                                            </div>
+                                
+                                            <div class="option">
+                                            <input type="radio" class="radio" id="film" name="category" />
+                                            <label for="film">JPY</label>
+                                            </div>
+                                
+                                            <div class="option">
+                                            <input type="radio" class="radio" id="film" name="category" />
+                                            <label for="film">BGN</label>
+                                            </div>
+                                
+                                            
+                                            <div class="option">
+                                            <input type="radio" class="radio" id="film" name="category" />
+                                            <label for="film">CZK</label>
+                                            </div>
+                                            
+                                            <div class="option">
+                                                <input type="radio" class="radio" id="film" name="category" />
+                                                <label for="film">DKK</label>
+                                                </div>
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="film" name="category" />
+                                                    <label for="film">GBP</label>
+                                                    </div>
+                                                    <div class="option">
+                                                        <input type="radio" class="radio" id="film" name="category" />
+                                                        <label for="film">HUF</label>
+                                                        </div>
+                                            
+                                
+                                        
+                                
+                                        
+                                        </div>
+                                
+                                        
+                                        </div>
+                               
+                                    
+                               
+
+
+                            <!--  -->
+
+
+
+
+                        <!-- <select class="iki_ic" id = "firstCurrency">
+                                                  
+                            <option selected>USD</option>
+                            <option>EUR</option>
+                            <option>JPY</option>
+                            <option>BGN</option>
+                            <option>CZK</option>
+                            <option>DKK</option>
+                            <option>GBP</option>          
+                            <option>HUF</option>
+                            <option>PLN</option>
+                            <option>RON</option>
+                            <option>SEK</option>
+                            <option>CHF</option>
+                            <option>ISK</option>
+                            <option>NOK</option>          
+                            <option>HRK</option>
+                            <option>RUB</option>
+                            <option>TRY</option>
+                            <option>AUD</option>
+                            <option>BRL</option>          
+                            <option>CAD</option>
+                            <option>CNY</option>
+                            <option>HKD</option>
+                            <option>IDR</option>          
+                            <option>ILS</option>
+                            <option>INR</option>
+                            <option>KRW</option>
+                            <option>MXN</option>          
+                            <option>MYR</option>
+                            <option>NZD</option>
+                            <option>PHP</option>
+                            <option>SGD</option>
+                            <option>THB</option>          
+                            <option>ZAR</option>
+                        </select> -->
+                    </div>
+                    <div class="uc">
+                        <select class="iki_ic" id = "secondCurrency">
+                                                  
+                            <option>USD</option>
+                            <option>EUR</option>
+                            <option>JPY</option>
+                            <option>BGN</option>
+                            <option>CZK</option>
+                            <option>DKK</option>
+                            <option>GBP</option>          
+                            <option>HUF</option>
+                            <option>PLN</option>
+                            <option>RON</option>
+                            <option>SEK</option>
+                            <option>CHF</option>
+                            <option>ISK</option>
+                            <option>NOK</option>          
+                            <option>HRK</option>
+                            <option>RUB</option>
+                            <option selected>TRY</option>
+                            <option>AUD</option>
+                            <option>BRL</option>          
+                            <option>CAD</option>
+                            <option>CNY</option>
+                            <option>HKD</option>
+                            <option>IDR</option>          
+                            <option>ILS</option>
+                            <option>INR</option>
+                            <option>KRW</option>
+                            <option>MXN</option>          
+                            <option>MYR</option>
+                            <option>NZD</option>
+                            <option>PHP</option>
+                            <option>SGD</option>
+                            <option>THB</option>          
+                            <option>ZAR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="sag">
+                <div class="card-sag"></div>
+            </div>
+        </div>
+        <div class="alt"></div>
+    </div>
+    <script src="./select.js"></script>
+    <script src="./currency.js"></script>
+    <script src="./app.js"></script>
+  
+    <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap');</style>
+</body>
+</html>
