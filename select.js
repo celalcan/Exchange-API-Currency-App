@@ -1,36 +1,124 @@
+
+
+ console.log("iki");
+
+ 
+
 const selected = document.querySelector(".selected");
+const selected2 = document.querySelector(".selected-2");
 const h1= document.querySelector(".h1");
-const optionsContainer = document.querySelector(".options-container");
+const h12= document.querySelector(".h1-2");
+const h123= document.querySelector(".h1-3");
+
 const cardsag = document.querySelector(".card-sag");
 const cardsol = document.querySelector(".card-sol");
-const optionsList = document.querySelectorAll(".option");
-const img = document.getElementById("myImg")
-
-let a=0;
-
-selected.addEventListener("click", () => {
-  
-  
-  
-
-  if (a === 1){
-   console.log(selected.clickCount);
-   optionsContainer.classList.remove("active");
+const img = document.getElementById("myImg");
+const img2 = document.getElementById("myImg-2");
+let tt=0;
+setTimeout(function() {
+  optionsList.forEach(o => {
+    
+    o.addEventListener("click", () => {
+      tt+=1;
+      if(tt===1)
+  {
+    h1.innerHTML = o.querySelector("label").innerHTML;
+    h123.innerHTML = h1.textContent +"-"+h12.textContent;
+    optionsContainer.classList.remove("active");
     img.style.transform = "rotate(0deg)";
     img.style.transition = "transform 0.4s";
-    a = 0;
-  }
-  else{
-    a=a+1;
-    console.log(selected.clickCount);
+    
+    currency.exchange();
+   return;
+        }
+       
+        console.log(firstSelect.textContent);
+  });
+ 
+ 
+  });
+}, 100);
+   
+
+setTimeout(function() {
+  optionsList2.forEach(o => {
+    
+    o.addEventListener("click", () => {
+      tt+=1;
+      if(tt===1)
+  {
+    h123.innerHTML=h1.textContent+"-";
+    h12.innerHTML = o.querySelector("label").innerHTML;
+    h123.innerHTML = h123.innerHTML + o.querySelector("label").textContent;
+    optionsContainer2.classList.remove("active");
+    img2.style.transform = "rotate(0deg)";
+    img2.style.transition = "transform 0.4s";
+   
+    currency.exchange();
+   return;
+        }
+       
+    
+  });
+ 
+ 
+  });
+}, 100);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+selected.addEventListener("click", () => {
+  tt=0;
+  
     optionsContainer.classList.toggle("active");
-    img.style.transform = "rotate(180deg)";
+    if( img.style.transform === "rotate(180deg)")
+    {
+      img.style.transform = "rotate(0deg)";
+    }
+    else{
+      img.style.transform = "rotate(180deg)";
+    }
+    
+   
     img.style.transition = "transform 0.4s";
     
-  }
-
-  
 });
+selected2.addEventListener("click", () => {
+  tt=0;
+    optionsContainer2.classList.toggle("active");
+    if( img2.style.transform === "rotate(180deg)")
+    {
+      img2.style.transform = "rotate(0deg)";
+    }
+    else{
+      img2.style.transform = "rotate(180deg)";
+    }
+    img2.style.transition = "transform 0.4s";
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 document.addEventListener("click", function(event) {
   if(!selected.contains(event.target)){
@@ -38,18 +126,8 @@ document.addEventListener("click", function(event) {
     img.style.transform = "rotate(0deg)";
     img.style.transition = "transform 0.4s";
   }
-
-  
 });
 
-optionsList.forEach(o => {
-  o.addEventListener("click", () => {
-    console.log(selected.innerHTML);
-    h1.innerHTML = o.querySelector("label").innerHTML;
 
-    optionsContainer.classList.remove("active");
-    img.style.transform = "rotate(0deg)";
-    img.style.transition = "transform 0.4s";
-  });
-});
+
 
